@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile FeliCa Client</string>
+    <string name="app_string1">Launch this application?</string>
+    <string name="app_string2">Several applications have been detected.</string>
+    <string name="intent_string1">Launch this application?</string>
+    <string name="mailer_string1">Compose a new e-mail?</string>
+    <string name="browser_string1">Access this website?</string>
+    <string name="header">FeliCa Data Reception</string>
+    <string name="button_yes">OK</string>
+    <string name="button_no">Cancel</string>
+    <string name="permission_label">Use \"Osaifu-Keitai\" function.</string>
+    <string name="permission_desc">Allow this application to use \"Osaifu-Keitai\" function</string>
+    <string name="permission_group_label">Osaifu-Keitai</string>
+    <string name="permission_group_desc">Allow this application to use \"Osaifu-Keitai\" function</string>
+    <string name="intent_recv_start">Started FeliCa data reception.</string>
+    <string name="intent_receiving">Receiving FeliCa Data</string>
+    <string name="intent_recv_failed">FeliCa data reception was interrupted.</string>
+    <string name="user_app_launch_canceled">FeliCa data reception was interrupted.</string>
+    <string name="intent_recv_no_app_found">The specified application is not found.</string>
+    <string name="user_app_start_notification">Touch your phone on the other device after launching the application.</string>
+</resources>

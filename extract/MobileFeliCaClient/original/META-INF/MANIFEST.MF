@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_20 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: hrjk559HY38zPG8iAJ6akf0H0d4=
+
+Name: res/drawable-hdpi-v4/ic_stat_notify_falp.png
+SHA1-Digest: BTT3gVP3CaO8n9Qa9KPl5bRizNU=
+
+Name: res/drawable-mdpi-v4/ic_stat_notify_falp.png
+SHA1-Digest: bNVLDo7HjuwyvqRquN1Dd+dUb9k=
+
+Name: resources.arsc
+SHA1-Digest: sDmujEqNlKQC2gyd/MqUMsLLtbw=
+
+Name: classes.dex
+SHA1-Digest: /vttEv5mEP55yosEolJIAqLxEhs=
+

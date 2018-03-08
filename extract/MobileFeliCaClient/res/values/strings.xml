@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">モバイルFeliCaクライアント</string>
+    <string name="app_string1">"アプリケーションを
+起動しますか？"</string>
+    <string name="app_string2">"＜対象アプリケーションが
+　複数あります＞"</string>
+    <string name="intent_string1">"アプリケーションを
+起動しますか？"</string>
+    <string name="mailer_string1">"新規メールを
+作成しますか？"</string>
+    <string name="browser_string1">サイト接続しますか？</string>
+    <string name="header">FeliCaデータ受信</string>
+    <string name="button_yes">はい</string>
+    <string name="button_no">いいえ</string>
+    <string name="permission_label">おサイフケータイの機能を利用</string>
+    <string name="permission_desc">おサイフケータイの機能の利用をアプリケーションに許可します。</string>
+    <string name="permission_group_label">おサイフケータイ</string>
+    <string name="permission_group_desc">おサイフケータイの利用をアプリケーションに許可します。</string>
+    <string name="intent_recv_start">FeliCaデータ受信を開始しました。</string>
+    <string name="intent_receiving">FeliCaデータ受信中</string>
+    <string name="intent_recv_failed">FeliCaデータ受信が中断されました。</string>
+    <string name="user_app_launch_canceled">FeliCaデータ受信が中断されました。</string>
+    <string name="intent_recv_no_app_found">指定されたアプリケーションがありません。</string>
+    <string name="user_app_start_notification">"アプリケーションの起動後、
+端末を再度重ねてください。"</string>
+</resources>

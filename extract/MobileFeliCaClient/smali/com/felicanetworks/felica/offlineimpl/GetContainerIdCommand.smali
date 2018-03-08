@@ -1,0 +1,215 @@
+.class Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+.super Lcom/felicanetworks/felica/offlineimpl/Command;
+.source "GetContainerIdCommand.java"
+
+
+# static fields
+.field private static final CODE:B = 0x70t
+
+.field private static instance:Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x6
+
+    .line 33
+    invoke-direct {p0}, Lcom/felicanetworks/felica/offlineimpl/Command;-><init>()V
+
+    .line 35
+    const-string v0, "%s"
+
+    const-string v1, "000"
+
+    invoke-static {v2, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 36
+    const-string v0, "%s"
+
+    const-string v1, "999"
+
+    invoke-static {v2, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 37
+    return-void
+.end method
+
+.method static getInstance()Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x6
+
+    .line 47
+    const-string v0, "%s"
+
+    const-string v1, "000"
+
+    invoke-static {v2, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 48
+    sget-object v0, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;->instance:Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+
+    if-nez v0, :cond_0
+
+    .line 49
+    const-string v0, "%s"
+
+    const-string v1, "001"
+
+    invoke-static {v2, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 50
+    new-instance v0, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+
+    invoke-direct {v0}, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;-><init>()V
+
+    sput-object v0, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;->instance:Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+
+    .line 52
+    :cond_0
+    const-string v0, "%s"
+
+    const-string v1, "999"
+
+    invoke-static {v2, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 53
+    sget-object v0, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;->instance:Lcom/felicanetworks/felica/offlineimpl/GetContainerIdCommand;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method doSet(Lcom/felicanetworks/felica/util/ByteBuffer;)V
+    .locals 4
+    .param p1, "byteBuffer"    # Lcom/felicanetworks/felica/util/ByteBuffer;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/felicanetworks/felica/offlineimpl/OfflineException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v3, 0x6
+
+    .line 67
+    const-string v1, "%s"
+
+    const-string v2, "000"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 68
+    if-nez p1, :cond_0
+
+    .line 69
+    const-string v1, "%s"
+
+    const-string v2, "700"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 70
+    new-instance v1, Lcom/felicanetworks/felica/offlineimpl/OfflineException;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v2}, Lcom/felicanetworks/felica/offlineimpl/OfflineException;-><init>(I)V
+
+    throw v1
+
+    .line 75
+    :cond_0
+    const/16 v1, 0x70
+
+    :try_start_0
+    invoke-virtual {p1, v1}, Lcom/felicanetworks/felica/util/ByteBuffer;->append(B)V
+
+    .line 76
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v1}, Lcom/felicanetworks/felica/util/ByteBuffer;->append(B)V
+
+    .line 77
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v1}, Lcom/felicanetworks/felica/util/ByteBuffer;->append(B)V
+    :try_end_0
+    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 82
+    const-string v1, "%s"
+
+    const-string v2, "999"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 83
+    return-void
+
+    .line 78
+    :catch_0
+    move-exception v0
+
+    .line 79
+    .local v0, "e":Ljava/lang/ArrayIndexOutOfBoundsException;
+    const-string v1, "%s"
+
+    const-string v2, "701"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 80
+    new-instance v1, Lcom/felicanetworks/felica/offlineimpl/OfflineException;
+
+    const/4 v2, 0x2
+
+    invoke-direct {v1, v2}, Lcom/felicanetworks/felica/offlineimpl/OfflineException;-><init>(I)V
+
+    throw v1
+.end method
+
+.method get(Lcom/felicanetworks/felica/util/ByteBuffer;)Lcom/felicanetworks/felica/offlineimpl/Response;
+    .locals 4
+    .param p1, "byteBuffer"    # Lcom/felicanetworks/felica/util/ByteBuffer;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/felicanetworks/felica/offlineimpl/OfflineException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v3, 0x6
+
+    .line 97
+    const-string v1, "%s"
+
+    const-string v2, "000"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 98
+    invoke-static {}, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdResponse;->getInstance()Lcom/felicanetworks/felica/offlineimpl/GetContainerIdResponse;
+
+    move-result-object v0
+
+    .line 99
+    .local v0, "response":Lcom/felicanetworks/felica/offlineimpl/GetContainerIdResponse;
+    const-string v1, "%s"
+
+    const-string v2, "999"
+
+    invoke-static {v3, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+
+    .line 100
+    invoke-virtual {v0, p0, p1}, Lcom/felicanetworks/felica/offlineimpl/GetContainerIdResponse;->get(Lcom/felicanetworks/felica/offlineimpl/Command;Lcom/felicanetworks/felica/util/ByteBuffer;)Lcom/felicanetworks/felica/offlineimpl/Response;
+
+    move-result-object v1
+
+    return-object v1
+.end method
