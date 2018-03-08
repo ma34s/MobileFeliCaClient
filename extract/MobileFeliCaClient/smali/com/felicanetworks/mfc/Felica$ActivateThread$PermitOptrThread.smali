@@ -1089,6 +1089,15 @@
 
     .line 871
     .end local v10    # "optr":Lcom/felicanetworks/mfw/i/fbl/BizResOptr;
+
+    const/4 v1, 0x4
+    const-string v2, "%s %s"
+    const-string v3, "XXX"
+    const-string v4, "PermitOptrThread dummy return"
+    invoke-static {v1, v2, v3, v4}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    iput-boolean v0, p0, Lcom/felicanetworks/mfc/Felica$ActivateThread$PermitOptrThread;->succeeded:Z
+    goto :goto_0
+
     :cond_3
     :try_start_3
     invoke-direct {p0}, Lcom/felicanetworks/mfc/Felica$ActivateThread$PermitOptrThread;->getCallerSignerHash()Ljava/util/Vector;

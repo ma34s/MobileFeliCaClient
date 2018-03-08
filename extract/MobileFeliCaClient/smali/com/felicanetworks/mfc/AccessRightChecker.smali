@@ -100,6 +100,11 @@
 
     invoke-static {v3, v4, v5, v6, p1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
+    const-string v3, "%s"
+    const-string v4, "XXX check dummy return"
+    invoke-static {v7, v3, v4}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
+
     .line 128
     if-nez p1, :cond_0
 
@@ -436,6 +441,11 @@
     .line 313
     invoke-static/range {v2 .. v7}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
+    const-string v3, "%s"
+    const-string v4, "XXX checkNodeCodeList dummy return"
+    invoke-static {v2, v3, v4}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
+
     .line 316
     const-string v2, "0002"
 
@@ -771,6 +781,11 @@
     move-result-object v7
 
     invoke-static {v8, v5, v6, v7, p1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    const-string v5, "%s"
+    const-string v6, "XXX checkSystemCode dummy return"
+    invoke-static {v8, v5, v6}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
 
     .line 255
     const-string v5, "0002"

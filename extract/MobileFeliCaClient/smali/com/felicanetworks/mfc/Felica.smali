@@ -2058,6 +2058,11 @@
     .line 4229
     invoke-static {v3, v0, v1, v2, p2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
+    const-string v0, "%s"
+    const-string v1, "XXX checkAccessNodeCodeList dummy return"
+    invoke-static {v3, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
+
     .line 4233
     iget-object v0, p0, Lcom/felicanetworks/mfc/Felica;->permit:Lcom/felicanetworks/mfw/i/fbl/Permit;
 
@@ -2085,12 +2090,8 @@
     .end annotation
 
     .prologue
-    .line 4154
-    monitor-enter p0
-
     const/4 v0, 0x4
 
-    :try_start_0
     const-string v1, "%s In category = %s"
 
     const-string v2, "000"
@@ -2101,6 +2102,15 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
+    const-string v3, "%s"
+    const-string v1, "XXX checkAccessRight dummy return"
+    invoke-static {v0, v3, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
+
+    .line 4154
+    monitor-enter p0
+
+    :try_start_0
     .line 4157
     iget-object v0, p0, Lcom/felicanetworks/mfc/Felica;->permit:Lcom/felicanetworks/mfw/i/fbl/Permit;
 
@@ -2154,6 +2164,11 @@
     move-result-object v2
 
     invoke-static {v3, v0, v1, v2}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    const-string v0, "%s"
+    const-string v1, "XXX checkAccessSystemCode dummy return"
+    invoke-static {v3, v0, v1}, Lcom/felicanetworks/mfc/util/LogMgr;->log(ILjava/lang/String;Ljava/lang/Object;)V
+    return-void
 
     .line 4191
     iget-object v0, p0, Lcom/felicanetworks/mfc/Felica;->permit:Lcom/felicanetworks/mfw/i/fbl/Permit;
